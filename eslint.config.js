@@ -7,6 +7,7 @@ const eslintConfig = antfu(
     jsx: {
       a11y: true,
     },
+    ignores: ["package.json"],
   },
   {
     name: "fantomstudy/rewrite",
@@ -46,7 +47,7 @@ const eslintConfig = antfu(
         },
       ],
     },
-  }
+  },
 );
 
 export default eslintConfig;
