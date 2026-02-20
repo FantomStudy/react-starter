@@ -7,9 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
-    "fmt": "oxfmt",
-    "fmt:check": "oxfmt --check",
-    "lint": "eslint --fix ."
+    "lint": "eslint --fix .",
+    "fmt": "oxfmt"
   },
   "dependencies": {
     "react": "^19.2.4",
@@ -26,11 +25,11 @@
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.5.0",
-    "oxfmt": "^0.33.0",
+    "oxfmt": "^0.34.0",
     "typescript": "~5.9.3",
-    "vite": "npm:rolldown-vite@7.3.1"
+    "vite": "^8.0.0-beta.15"
   },
   "overrides": {
-    "vite": "npm:rolldown-vite@7.2.5"
+    "vite": "^8.0.0-beta.15"
   }
 }

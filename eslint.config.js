@@ -2,8 +2,8 @@ import antfu from "@antfu/eslint-config";
 
 const eslintConfig = antfu(
   {
-    react: true,
     stylistic: false,
+    react: true,
     jsx: {
       a11y: true,
     },
