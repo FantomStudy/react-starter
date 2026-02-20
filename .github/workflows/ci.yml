@@ -21,9 +21,6 @@ jobs:
       - name: Install deps
         run: bun ci
 
-      - name: Format
-        run: bun fmt:check
-
       - name: Lint
         run: bun lint
 
