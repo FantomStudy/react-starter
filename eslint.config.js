@@ -3,6 +3,7 @@ import antfu from "@antfu/eslint-config";
 const eslintConfig = antfu(
   {
     stylistic: false,
+    markdown: false,
     react: true,
     jsx: {
       a11y: true,
@@ -29,7 +30,6 @@ const eslintConfig = antfu(
           groups: [
             "type-import",
             ["type-parent", "type-sibling", "type-index", "type-internal"],
-
             "value-builtin",
             "value-external",
             "value-internal",
