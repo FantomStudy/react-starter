@@ -5,6 +5,7 @@ const eslintConfig = antfu(
     stylistic: false,
     markdown: false,
     react: true,
+    nextjs: true,
     jsx: {
       a11y: true,
     },
