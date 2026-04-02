@@ -6,9 +6,6 @@ const eslintConfig = antfu(
     markdown: false,
     react: true,
     nextjs: true,
-    jsx: {
-      a11y: true,
-    },
     ignores: ["package.json"],
   },
   {
