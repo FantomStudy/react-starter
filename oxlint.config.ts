@@ -1,0 +1,12 @@
+import { defineConfig } from "oxlint";
+
+export default defineConfig({
+  plugins: ["react", "typescript", "oxc"],
+  options: {
+    typeAware: true,
+  },
+  rules: {
+    "react/rules-of-hooks": "error",
+    "react/only-export-components": ["warn", { allowConstantExport: true }],
+  },
+});
