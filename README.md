@@ -1,32 +1,44 @@
-# React + TypeScript + Vite
+<h1 align="center">React Starter</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+<p align="center">
+React + Vite starter, powered by <a href="https://oxc.rs">Oxc</a>
+</p>
 
-Currently, two official plugins are available:
+<br>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+> This is my personal template. Opinionated, minimal, and tuned to how I like to start projects — feel free to fork it and make it yours.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ⚡️ [Vite 8](https://vitejs.dev/) - instant dev server, native `@/*` alias resolution, no config needed
+- ⚛️ [React 19](https://react.dev/) - just React, nothing bolted on top
+- 🦀 [Oxlint](https://oxc.rs) + [Oxfmt](https://oxc.rs) - lint & format in Rust, ESLint and Prettier are not invited
+- 📘 [TypeScript 7](https://www.typescriptlang.org/) - strict, split into app/node configs so each sees only what it needs
+- 🍞 [Bun](https://bun.sh) - fast installs, `bun.lock` committed
 
-## Expanding the Oxlint configuration
+## Try it now!
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+bunx degit FantomStudy/react-starter my-app
+cd my-app
+bun install
+bun dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Commands
+
+|               |                                  |
+| ------------- | -------------------------------- |
+| `bun dev`     | Start dev server                 |
+| `bun build`   | Typecheck + build for production |
+| `bun preview` | Preview the production build     |
+| `bun lint`    | Lint & auto-fix with Oxlint      |
+| `bun fmt`     | Format with Oxfmt                |
+
+## Why Oxc instead of ESLint/Prettier?
+
+Because a Rust toolchain lints and formats in a fraction of the time, and `oxlint-tsgolint` gives type-aware rules without a separate `tsc` pass slowing everything down. Less waiting, same guarantees. See [oxc.rs](https://oxc.rs) if you're curious.
+
+## License
+
+[MIT](./LICENSE) © [FantomStudy](https://github.com/FantomStudy)
