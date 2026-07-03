@@ -19,21 +19,45 @@ React + Vite starter, powered by <a href="https://oxc.rs">Oxc</a>
 ## Try it now!
 
 ```bash
-bunx degit FantomStudy/react-starter my-app
+npx degit FantomStudy/react-starter my-app
 cd my-app
-bun install
+bun i
+```
+
+## Usage
+
+### Development
+
+Just run and visit http://localhost:5173
+
+```bash
 bun dev
 ```
 
-## Commands
+### Build
 
-|               |                                  |
-| ------------- | -------------------------------- |
-| `bun dev`     | Start dev server                 |
-| `bun build`   | Typecheck + build for production |
-| `bun preview` | Preview the production build     |
-| `bun lint`    | Lint & auto-fix with Oxlint      |
-| `bun fmt`     | Format with Oxfmt                |
+To build the app, run
+
+```bash
+bun build
+```
+
+This type-checks the project (`tsc -b`) and outputs the production build to `dist`, ready to be served.
+
+### Preview
+
+Preview the production build locally
+
+```bash
+bun preview
+```
+
+### Lint & Format
+
+```bash
+bun lint # oxlint --fix
+bun fmt  # oxfmt
+```
 
 ## Why Oxc instead of ESLint/Prettier?
 
