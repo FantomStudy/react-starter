@@ -1,7 +1,7 @@
 <h1 align="center">React Starter</h1>
 
 <p align="center">
-React + Vite starter, powered by <a href="https://oxc.rs">Oxc</a>
+React + Vite starter, powered by Oxc
 </p>
 
 <br>
@@ -10,16 +10,16 @@ React + Vite starter, powered by <a href="https://oxc.rs">Oxc</a>
 
 ## Features
 
-- ⚡️ [Vite 8](https://vitejs.dev/) - instant dev server, native `@/*` alias resolution, no config needed
+- ⚡️ [Vite 8](https://vite.dev/) - instant dev server, `@/*` alias resolved straight from `tsconfig` paths
 - ⚛️ [React 19](https://react.dev/) - just React, nothing bolted on top
-- 🦀 [Oxlint](https://oxc.rs) + [Oxfmt](https://oxc.rs) - lint & format in Rust, ESLint and Prettier are not invited
-- 📘 [TypeScript 7](https://www.typescriptlang.org/) - strict, split into app/node configs so each sees only what it needs
-- 🍞 [Bun](https://bun.sh) - fast installs, `bun.lock` committed
+- ⚓ [Oxlint](https://oxc.rs/docs/guide/usage/linter) + [Oxfmt](https://oxc.rs/docs/guide/usage/formatter) - lint & format in Rust
+- 📘 [TypeScript 7](https://www.typescriptlang.org/) - strict, ES2025, split into app/node configs so each sees only what it needs
+- 🍞 [Bun](https://bun.sh) - fast installs, `bun.lock` committed, version pinned via `packageManager`
 
 ## Try it now!
 
 ```bash
-npx degit FantomStudy/react-starter my-app
+bunx degit FantomStudy/react-starter my-app
 cd my-app
 bun i
 ```
@@ -28,7 +28,7 @@ bun i
 
 ### Development
 
-Just run and visit http://localhost:5173
+Start the dev server and open http://localhost:5173
 
 ```bash
 bun dev
@@ -36,13 +36,13 @@ bun dev
 
 ### Build
 
-To build the app, run
+Type-check and build for production
 
 ```bash
 bun run build
 ```
 
-This type-checks the project (`tsc -b`) and outputs the production build to `dist`, ready to be served.
+Runs `tsc -b`, then `vite build`. The output lands in `dist`, ready to be served.
 
 ### Preview
 
