@@ -1,7 +1,7 @@
 <h1 align="center">React Starter</h1>
 
 <p align="center">
-React + Vite starter, powered by Oxc
+React starter, powered by Vite
 </p>
 
 <br>
