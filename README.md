@@ -39,7 +39,7 @@ bun dev
 To build the app, run
 
 ```bash
-bun build
+bun run build
 ```
 
 This type-checks the project (`tsc -b`) and outputs the production build to `dist`, ready to be served.
@@ -58,10 +58,6 @@ bun preview
 bun lint # oxlint --fix
 bun fmt  # oxfmt
 ```
-
-## Why Oxc instead of ESLint/Prettier?
-
-Because a Rust toolchain lints and formats in a fraction of the time, and `oxlint-tsgolint` gives type-aware rules without a separate `tsc` pass slowing everything down. Less waiting, same guarantees. See [oxc.rs](https://oxc.rs) if you're curious.
 
 ## License
 
